@@ -1,0 +1,101 @@
+/* Boton Principal */
+/* CSS */
+.boton-accion {
+  backface-visibility: hidden;
+  background: #755AF3;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 3.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.boton-accion:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.boton-accion:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.boton-accion:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.boton-accion:focus {
+  outline: 0 solid transparent;
+}
+
+.boton-accion:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.boton-accion:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.boton-accion:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+/* Botones secundarios */
+
+.boton-accion{
+    background-color: #755AF3;
+    padding: 12px 30px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;    
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
+.botonVerde{
+  background-color: #49D3B9;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.botonVerde a{
+  text-decoration: none;
+}
+
+.boton-accion-secundario{    
+    padding: 12px 30px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;     
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: transparent;
+    color: #755AF3;
+    border: 2px solid #755AF3;
+}

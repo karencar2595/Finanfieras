@@ -1,0 +1,623 @@
+/*Reset CSS*/
+
+body{
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0; 
+  padding: 0;
+}
+a, a:hover, a:active, a:visited{
+  color: inherit !important;
+}
+/*FONTS*/
+/*fuente de la marca*/ /*para llamarla usar 'palmerlakeprint-regularRg'*/
+@font-face {
+  font-family: 'palmerlakeprint-regularRg';
+  src: url('../src/fonts/palmerlakeprint-regular-webfont.woff2') format('woff2'),
+      url('../src/fonts/palmerlakeprint-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*NavBar*/
+.navbar{
+  background-color: #755BF4; 
+  padding: 0;  
+  width: 100%;
+  font-weight: 500;
+}
+
+.navbar-collapse{
+  display: flex;
+  color: #ffffff;
+  position: absolute;
+  top: 6.9rem;
+  left: 0;
+  width: 100vw;
+  height: 29.5rem;
+  background-color: #755BF4;
+}
+.navbar-nav{
+  display: flex;
+  row-gap: 1.5rem;
+  margin-left: 1rem;
+}
+.navbar-toggler{
+  border: none;
+}
+.containerNavBar{
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+
+}
+
+.toggler{
+  height: 40px;
+  width: 30px;
+}
+.nav-link{
+  width: 15rem;
+  padding-bottom: 1rem;
+  border-bottom: solid white 1px;
+  font-family: 'Poppins', sans-serif;
+}
+  @media (min-width: 768px){
+    .navbar-collapse{
+      justify-content: end;
+      position:unset;
+      white-space: nowrap;
+      height: inherit;
+    }
+    .containerNavBar{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  /*Logo*/
+.navbar-brand img{
+  width: 100px;
+  height: 100px;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 768px){
+  .navbar-brand img{
+    width: 64px;
+    height: 64px;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+  .nav-link{
+    margin-left: 1rem; 
+    width: inherit;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: 1em;
+  }
+}
+
+.cuadrosDeTexto{
+  width: 80%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+}
+.cuadrosDeTexto p, ul{
+  font-size: 0.8em;
+}
+  @media (min-width: 768px){
+    .cuadrosDeTexto{
+      width: 38%;
+      height: 28rem;
+      flex-flow: column nowrap;
+      text-align: left;
+      justify-content: space-evenly;
+    }
+    .cuadrosDeTexto p, ul{
+      font-size: 1em;
+    }
+  }
+
+  @media (min-width: 1600px){
+    .cuadrosDeTexto{
+      width: 30%;      
+    }
+  }
+
+.titulos{
+  font-family: 'palmerlakeprint-regularRg';
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  color: #755BF4;
+}
+@media (min-width: 768px){
+  .titulos{
+    font-size: 3.8rem;
+  }
+}
+  
+.centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*SECCION BANNER MOBILE*/
+.bannerDesktop{
+  display: none;
+}
+.bannerMobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 100%;
+  color: white;
+  background-color:#755BF4;
+  margin-top: 6.3rem;
+  
+}
+.carousel-indicators{
+  top: 18rem;
+}
+.bannerMobile{
+  height: 29rem;
+}
+.contenedorPortada{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.imgPortadaMobile{
+  width: 375px;
+  height: 225px;
+}
+.imgLogoMobile{
+  margin-left: 4rem;
+  width: 64px;
+  height: 64px;
+}
+.contenedorTextoPortda{
+  height: 18rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.p1{
+  font-size: 1.3rem;
+}
+.p2{
+  font-size: 0.9rem;
+}
+
+
+/*SECCION BANNER DESKTOP*/
+
+    @media (min-width: 768px){
+      .bannerMobile{
+        display: none;
+      }
+      .bannerDesktop{
+        display: block;
+      }
+      .seccionBanner{
+        background-image: url(../src/img/fotoPortada.png);
+        color: white;
+        background-color:#755BF4;
+        background-size: 50%;
+        background-position-x: 76%;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        height: 40rem;
+        font-family: 'Poppins', sans-serif;
+        background-position-y: bottom;
+      }
+      
+      .titulo-banner{
+        margin-top: 7rem;
+        font-size: 3rem;
+        font-weight: 500;
+        display: inline-flex;
+        width: 50%;
+      }
+      
+      .banner-margen{
+        margin-left: 8%;
+      }
+      
+        .titulo span{
+          display: block;
+          margin-top: 2%;
+          font-weight: 300;
+        }
+      
+      .redes-banner{
+        position: relative;
+        bottom: -9vh;
+      }
+      
+      .redes-banner a{
+        font-size: 1.5rem;
+          padding: 10px;
+      }
+      
+      .redes-banner p{
+        font-size: 1.2rem;
+      }
+      
+      .logoBanner{
+        position: relative;
+        float: right;
+        right: 12%;  
+        top: 6rem;
+      }
+        .logoBanner img{
+          width: 13rem;
+          height: 13rem;
+        }
+        .logoBanner p{
+          opacity: 1;
+          font-family: 'Poppins', sans-serif;
+          position: relative;
+          font-size: 1.2em;
+        }
+
+    }
+    @media (min-width: 1400px){
+      .titulo-banner{
+        width: 33%;
+      }
+    }
+  
+  
+
+/* SECCION QUIENES SOMOS */
+
+
+.seccion-quienesSomos{
+  display: flex;
+  flex-flow: column nowrap;  
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+iframe{
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+
+    @media (min-width: 768px){    
+      iframe{
+        width: 560px;
+        height: 315px;
+      }
+      .seccion-quienesSomos{
+        justify-content: space-evenly;
+        flex-flow: row-reverse nowrap;
+        margin: 3rem 0 0 0;
+      }
+    }
+
+/*SECCION TIENDA*/
+
+.seccion-tienda{
+  height: 40rem;
+  display: flex;
+  flex-flow: column nowrap;  
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin: 5rem 0;
+}
+
+.seccion-tienda button{
+    width: auto;
+    white-space: nowrap;
+}
+button a{
+  text-decoration: none;
+}
+
+    @media (min-width: 768px){
+      .seccion-tienda{
+        margin-top: 5rem;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items:unset;
+        margin: 3rem 0 0 0;
+      }
+      .seccion-tienda button{
+        width:250px;
+        height: 40px;
+      }
+      button a{
+        white-space: nowrap;
+      }
+      
+    }
+
+
+/*SECCION QUIZ*/
+#quiz{
+  height: 25rem;
+
+}
+.seccionQuiz{
+  width: 100%;
+  height: 20rem;   
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #755BF4;
+}
+  .seccionQuiz h2{
+      color: #ffffff;
+    }
+    .leonQuiz{
+      width:60px;
+      height:60px;
+    }
+    .containerQuizContent{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (min-width: 768px){
+      .leonQuiz{
+        width:12.3rem;
+        height:12.4rem;
+      }
+      .containerQuizContent{
+        column-gap: 3rem;
+        padding: 0 0.5rem;
+      }
+      .seccionQuiz{
+        height: 18rem;
+      }
+    }
+
+/*SECCION PLANTILLA*/
+.seccion-plantilla{
+  height: 45rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 3rem;
+}
+.imgPlantillaMobile{
+  width: 99%;
+  border: #755AF3 1px solid;
+  border-radius: 10px;
+}
+  
+  @media (min-width: 768px){
+    .seccion-plantilla{
+      height: 40rem;
+      flex-flow: row nowrap;
+    }
+    .imgPlantillaMobile{
+      width: 36rem;
+      height: 29rem;
+    }
+  }
+
+  @media (min-width: 1600px){
+    .imgPlantillaMobile{
+      width: 28%;
+    }
+
+  }
+/* Divisor */
+.divisor{
+  background-image: url(../src/img/patronVerde.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3.5rem;
+  width:100%; 
+}
+
+/*SECCION NUESTROS CLIENTES*/
+.seccion-clientes{
+  display: flex;
+  flex-flow: column nowrap;
+  height: 43rem;  
+  align-items: center;
+}
+
+.containerLogos{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  row-gap: 15px;
+  height: 15rem;
+  width: 100%;
+}
+  .containerLogos img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 16px;
+    border: #cecece solid 1px;
+    -webkit-box-shadow: 2px 2px 10px 6px rgba(55,71,79,0.39); 
+    box-shadow: 2px 2px 10px 6px rgba(55,71,79,0.39); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  @media (min-width: 768px){
+    .seccion-clientes{
+      height: 33rem;
+      justify-content: space-evenly;
+      margin: 3rem 0;
+    }
+    .textoClientes{
+      width: 60%;
+    }
+    .containerLogos{
+      flex-flow: row nowrap;
+      align-items: center;
+      column-gap: 50px;
+      row-gap: 30px;
+      height: 125px;
+      width: 100%;
+    }
+    .containerLogos img{
+      width: 94px;
+      height: 94px;
+    }
+  }
+  
+
+/*Formulario*/
+.seccion-formulario{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+form .inputsContainers {
+  height: 3rem;
+}
+
+.formulario{
+  height: 30rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+  .formulario button{
+    width: 10rem;
+    height: 3rem;
+    align-self: center;
+  }
+.inputsContainers{
+  display: flex;
+  flex-flow: column nowrap;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+  .formulario input{
+    width: 13rem;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    padding: 1rem 0rem;
+    margin-bottom: 1.5rem;
+  }
+  #mensaje{
+    height: 10rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+  }
+    @media (min-width: 768px){
+      .formulario{
+        height: 20rem;
+      }
+      .textoForm{
+        width: 100%;
+        height: auto;
+      }
+      .inputsContainers{
+        flex-flow: row nowrap;
+        margin-bottom: 0;
+        justify-content: space-between;
+      }
+      .formulario button{
+        align-self: flex-end;
+      }
+      #mensaje{
+        height: 10rem;
+        width: 28rem;
+      }
+    }
+
+/* Seccion footer */
+
+.footer{
+  background-color: #755AF3;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.footer__condiciones{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Poppins', sans-serif;    
+  font-size: 1em;
+}
+.modal-content{
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  
+}
+.modal-header h5, .modal-body h5{
+  font-weight: 600;
+  font-size: 1em;
+}
+.modal-body{
+  font-size: 0.8em;
+}
+@media (min-width: 768px){
+  .footer{
+    flex-direction: row;}
+ .modal-content{
+    width: 60vw;
+  }
+  .modal-header h5, .modal-body h5{
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+  .footer__condiciones span{
+    padding: 10px;  
+  }
+  .footer__condiciones a{
+      cursor: pointer;
+  }
+
+.footer__redes{
+  font-family: 'palmerlakeprint-regularRg';
+  font-size: 2rem;
+}
+
+  .footer__redes i{
+    padding: 10px;
+  }
+  @media (min-width: 768px){
+    .footer__redes{
+      font-family: 'palmerlakeprint-regularRg';
+      font-size: 3vw;
+    }
+    .footer__condiciones{
+      font-size: 1em;
+    }
+  }
+
+
+  
+
+  
+
+
