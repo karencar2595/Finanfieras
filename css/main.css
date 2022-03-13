@@ -577,6 +577,7 @@ form .inputsContainers {
   font-size: 1em;
 }
 .modal-body{
+  text-align: center;
   font-size: 0.8em;
 }
 @media (min-width: 768px){
