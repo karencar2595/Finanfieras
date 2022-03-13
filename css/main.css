@@ -166,7 +166,7 @@ a, a:hover, a:active, a:visited{
   top: 18rem;
 }
 .bannerMobile{
-  height: 29rem;
+  height: 30rem;
 }
 .contenedorPortada{
   display: flex;
@@ -390,7 +390,7 @@ button a{
 
 /*SECCION PLANTILLA*/
 .seccion-plantilla{
-  height: 45rem;
+  height: 48rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
