@@ -632,9 +632,6 @@ form .inputsContainers {
     }
   }
 
-
-
-
   /*AJUSTES MOBILE*/
 @media (max-width: 450px) {
 
@@ -666,9 +663,12 @@ form .inputsContainers {
     border-radius: 10px;
   }
 
-
   .formulario input{
     width: 100%;
+  }
+
+  .contenedorForm{
+    width: 85%;
   }
 
   
