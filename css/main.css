@@ -20,6 +20,10 @@ a, a:hover, a:active, a:visited{
 }
 
 
+
+
+
+
 /*NavBar*/
 .navbar{
   background-color: #755BF4; 
@@ -125,9 +129,21 @@ a, a:hover, a:active, a:visited{
   }
 
   @media (min-width: 1600px){
-    .cuadrosDeTexto{
+    #quienesSomos .cuadrosDeTexto{
       width: 30%;      
     }
+    #nuestraTienda .cuadrosDeTexto{
+      width: 24%;      
+    }
+    #quiz .cuadrosDeTexto{
+      width: 24%;      
+    }
+
+    #clientes .cuadrosDeTexto{
+      width: 40%;
+    }
+
+
   }
 
 .titulos{
@@ -155,7 +171,7 @@ a, a:hover, a:active, a:visited{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  height: 18rem;
   width: 100%;
   color: white;
   background-color:#755BF4;
@@ -165,9 +181,7 @@ a, a:hover, a:active, a:visited{
 .carousel-indicators{
   top: 18rem;
 }
-.bannerMobile{
-  height: 30rem;
-}
+
 .contenedorPortada{
   display: flex;
   flex-flow: column nowrap;
@@ -398,7 +412,7 @@ button a{
   row-gap: 3rem;
 }
 .imgPlantillaMobile{
-  width: 99%;
+  width: 85%;
   border: #755AF3 1px solid;
   border-radius: 10px;
 }
@@ -427,6 +441,7 @@ button a{
   background-size: cover;
   height: 3.5rem;
   width:100%; 
+  margin: 4% 0;
 }
 
 /*SECCION NUESTROS CLIENTES*/
@@ -487,6 +502,7 @@ button a{
   flex-flow: column nowrap;
   align-items: center;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 form .inputsContainers {
@@ -617,7 +633,46 @@ form .inputsContainers {
   }
 
 
+
+
+  /*AJUSTES MOBILE*/
+@media (max-width: 450px) {
+
+  .seccion-tienda img{
+    width: 85%;
+    border-radius: 15px;
+  }
+
+  .tienda-mobile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .seccionQuiz{
+    height: 16rem;
+  }
+
+  .textoQuiz .titulos{
+    font-size: 2rem;
+  }
+
+  .seccion-plantilla button{
+    width: 100%;
+  }
+
+  .imgPlantillaMobile{
+    width: 85%;
+    border: #755AF3 1px solid;
+    border-radius: 10px;
+  }
+
+
+  .formulario input{
+    width: 100%;
+  }
+
   
+}
 
   
 
